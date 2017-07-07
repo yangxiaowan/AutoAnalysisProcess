@@ -10,8 +10,11 @@ import javax.swing.JTextField;
 
 public class WindowsGUI extends JFrame {
 	
-	private String inputFilePath = null;
-	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3108932684791290925L;
+
 	private JTextField inputFileEditor = null;
 	
 	private JButton analysisiButton = null;
@@ -27,13 +30,13 @@ public class WindowsGUI extends JFrame {
 	}
 	
 	public void initFrame(){
-		this.setTitle("文档编写助手");
-		this.setSize(800,1000);
+		this.setTitle("自动提取");
+		this.setSize(500,600);
 		this.setLayout(null);
 		filepathLable = new JLabel();
 		filepathLable.setText("文件路径: ");
 		filepathLable.setFont(new Font("黑体",Font.BOLD,18));
-		analysisiButton = new JButton("自动生成列表");
+		analysisiButton = new JButton("自动");
 		inputFileEditor = new JTextField();
 		filepathLable.setSize(140,40);
 		filepathLable.setLocation(40,50);

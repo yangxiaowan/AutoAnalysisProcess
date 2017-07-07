@@ -5,15 +5,19 @@ import java.util.HashMap;
 import javax.swing.table.AbstractTableModel;
 
 public class MyTableModel extends AbstractTableModel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4346251008247726567L;
 	private Object mData[][] = null;
 	private HashMap<String, HashMap<String, String>> mapData = null;
 	public MyTableModel(HashMap<String, HashMap<String, String>> displayData){
 		this.mapData = displayData;
 	}
 	
-	private Class []cellType={Boolean.class,String.class,String.class,String.class,String.class,String.class};  
+	private Class []cellType={String.class,String.class,String.class};  
 	
-	private final String title[]={"是否选取","编号","服务名称","接口名称","MD5值","输入网页对应功能名称"}; 
+	private final String title[]={"服务名称","接口名称","MD5值"}; 
 	
 	public void initDisplayData(){
 		int mapNum = mapData.size();
