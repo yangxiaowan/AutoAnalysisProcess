@@ -1,6 +1,7 @@
 package com.test;
 
 import com.yangwan.FileReader;
+import com.yangwan.MyUtils;
 
 public class MyTest {
 	
@@ -9,5 +10,6 @@ public class MyTest {
 		FileReader myFileReader = new FileReader(filePath,"cash_special");
 		myFileReader.openFileAndGetStream();
 		myFileReader.analysisFile();
+		System.out.println(MyUtils.serviceInterfaceMap);
 	}
 }

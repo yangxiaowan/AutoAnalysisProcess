@@ -16,6 +16,7 @@ public class MyTableModel extends AbstractTableModel {
 	private final String title[]={"是否选取","编号","服务名称","接口名称","MD5值","输入网页对应功能名称"}; 
 	
 	public void initDisplayData(){
+		int mapNum = mapData.size();
 		
 	}
 	
